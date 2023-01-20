@@ -1,0 +1,49 @@
+.Graph {
+  width: 30vw;
+  max-height: 300px !important;
+  max-width: 300px !important;
+  min-width: 250px !important;
+  min-height: 250px !important;
+  border: 1px solid #ffffff;
+  border-radius: 8px;
+  padding: 12px 2%;
+
+  svg {
+    stroke: #ffffff;
+    #area {
+      stroke: none;
+      fill: rgb(1, 1, 197);
+      opacity: 1;
+    }
+    line {
+      stroke: #ffffff;
+      stroke-dasharray: 6;
+    }
+
+  }
+}
+
+@media (max-width: 736px) {
+  .Graph {
+    width: 95%;
+    max-height: 736px !important;
+    max-width: 736px !important;
+    min-width: 25px !important;
+    min-height: 25px !important;
+   
+  }
+  .img_and_controls {
+    display: block !important;
+  }
+
+}
+
+.Checkbox_group {
+  justify-content: center;
+}
+
+.GraphCont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

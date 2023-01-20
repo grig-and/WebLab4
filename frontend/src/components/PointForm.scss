@@ -1,0 +1,168 @@
+.PointForm {
+  @media (min-width: 736px) {
+    .inner {
+      width: min(500px, 40vw);
+    }
+  }
+
+  .inner {
+    padding: 16px 0 0 0;
+
+    >div {
+      width: 100%;
+    }
+
+    label {
+      font-size: 14px;
+      color: #c1c1c1;
+    }
+
+    &+div {
+
+      small {
+        padding: 3px 12px;
+        border-radius: 8px;
+        color: #e54a4a;
+      }
+
+      small {
+        background: none;
+        margin-right: auto;
+        padding-left: 0;
+        font-size: 12px;
+      }
+
+    }
+  }
+}
+
+.Input {
+  input[type="text"] {
+    height: 28px;
+    margin-top: 6px;
+    width: 300px;
+    border-radius: 8px;
+    border: 1px solid #868686;
+    background-color: #2d2d2e;
+    outline: none;
+    padding-left: 6px;
+    font-family: Consolas, monospace;
+    color: #dedeed;
+    font-size: 14px;
+    letter-spacing: 1px;
+
+    &:focus {
+      box-shadow: 0 0 0 2px #164bb0;
+      border-color: #3482ec;
+    }
+  }
+
+  span {
+    display: none;
+  }
+
+  @media (max-width: 736px) {
+    input[type="text"] {
+      width: min(100%, 270px);
+    }
+  }
+}
+
+.Checkbox_group {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+
+  .checkbox {
+    margin-top: 6px;
+    display: flex;
+
+    input[type="checkbox"] {
+      -moz-appearance: none;
+      -webkit-appearance: none;
+      -o-appearance: none;
+    }
+
+    input[type="checkbox"] {
+      border-radius: 6px;
+      width: 16px;
+      height: 16px;
+      border: 1px solid #7e7e7e;
+    }
+
+    input[type="checkbox"]:checked {
+      background-color: #a7a7a7;
+    }
+
+    span {
+      width: 14px;
+      margin-left: 4px;
+      font-size: 14px;
+      padding-top: 4px;
+    }
+  }
+
+  @media (max-width: 736px) {
+    .checkbox {
+      padding-right: 8px;
+    }
+
+    input[type="checkbox"] {
+      width: 10px;
+      height: 10px;
+    }
+  }
+}
+
+.buttons {
+  input {
+    font-size: 16px;
+    color: #ffffff;
+    
+    border: 1px solid #5e5f79;
+    border-radius: 8px;
+    padding: 6px 12px;
+    margin: auto;
+
+    &:active {
+      background-color: #00000000;
+    }
+  }
+}
+
+// class button submit
+.btn_submit {
+  width: 45%;
+  background-color: #3482ec;
+
+  &:hover {
+    background-color: #164bb0;
+  }
+}
+
+.btn_clear{
+  width: 45%;
+  background-color: #ff0000;
+
+  &:hover {
+    background-color: #c40000;
+  }
+}
+
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.error {
+  color: #ff0000 !important;
+}

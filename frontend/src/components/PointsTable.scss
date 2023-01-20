@@ -1,0 +1,53 @@
+.PointsTable {
+  margin: 0 auto !important;
+
+  > div {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+}
+.Table {
+  width: 100%;
+  max-width: 736px;
+  border-collapse: collapse;
+  border-radius: 12px;
+  overflow: hidden;
+  font-weight: bold;
+  font-family: Roboto, sans-serif;
+  margin-bottom: 20px;
+  .TableHead {
+    height: 36px;
+    background-color: #2f2f30;
+    color: white;
+    .TableCell {
+      color: #ffffff;
+      border: 1px solid #2e2e2e;
+    }
+  }
+  .TableRow {
+    height: 28px;
+    .TableCell {
+      color: #c1c1c1;
+      border: 1px solid #2e2e2e;
+      color: white;
+      text-align: center;
+    }
+    &:hover {
+      background-color: #414141;
+    }
+  }
+
+  .row_true {
+    background-color: rgba(0, 255, 0, 0.05) !important;
+  }
+  
+  .row_false {
+    background-color: rgba(255, 0, 0, 0.05) !important;
+  }
+
+}
+
+
+
+
