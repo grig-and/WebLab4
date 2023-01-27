@@ -9,7 +9,6 @@ export default function PointsTable() {
 
   return (
     <div className="PointsTable">
-      <div>
         <Table className="Table" selectable={false}>
           <TableHead className="TableHead">
             <TableCell className="TableCell" numeric>X</TableCell>
@@ -30,7 +29,6 @@ export default function PointsTable() {
             </TableRow>
           )).reverse()}
         </Table>
-      </div>
     </div>
   )
 }

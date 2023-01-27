@@ -1,5 +1,5 @@
 import { useEffect } from "react"
-import { useDispatch } from "react-redux"
+import { useDispatch, useSelector } from "react-redux"
 import { useHistory } from "react-router-dom"
 
 import "./Main.scss"
@@ -9,10 +9,12 @@ import { getPoints } from "../../service/request/point"
 import { setPoints } from "../../redux/slice/pointStateSlice"
 import PointForm from "../../components/PointForm"
 import { Link } from "react-router-dom"
+import TableWrapper from "../../components/TableWrapper"
 
 export default function Main() {
   const dispatch = useDispatch()
   const history = useHistory()
+  const points = useSelector(getPoints)
 
   useEffect(() => {
 
@@ -52,7 +54,10 @@ export default function Main() {
       </div>
 
       <br />
-      <PointsTable id="dataTable" />
+      <TableWrapper id="TableWrapper">
+        <PointsTable id="dataTable" />
+      </TableWrapper>
+
     </div>
   )
 }
